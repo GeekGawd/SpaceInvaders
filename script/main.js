@@ -12,13 +12,13 @@ document.getElementById("theme_song").play();
 
 /*Choosing 3 ships using event listeners*/
 document.getElementById("ship1").addEventListener("click",function(){
-    chooseShip("../images/ship1.png");}
+    chooseShip("./images/ship1.png");}
     );
 document.getElementById("ship2").addEventListener("click",function(){
-    chooseShip("../images/ship2.png");}
+    chooseShip("./images/ship2.png");}
     );
 document.getElementById("ship3").addEventListener("click",function(){
-    chooseShip("../images/ship3.png");}
+    chooseShip("./images/ship3.png");}
     );
 /*-------------------------------------*/
 
@@ -181,7 +181,7 @@ function countdown(){
 
                     /*Generate a enemy laser using img*/
                     const $enemylaser = document.createElement("img");
-                    $enemylaser.src = "../images/enemyLaser.png";
+                    $enemylaser.src = "./images/enemyLaser.png";
                     $enemylaser.className = "enemyLaser";
                     alienlaser.play(); // Play sound when the enemy laser is created
 
@@ -225,7 +225,7 @@ function setPosition(enemy, x, y) {
 function createEnemy(gameArea, x, y){
     /*Create enemy as img*/
     const $enemy = document.createElement("img");
-    $enemy.src = "../images/alien1.png";
+    $enemy.src = "./images/alien1.png";
     $enemy.className = "enemy";
     gameArea.appendChild($enemy); //Add the enemy to the gameArea in HTML
     const enemy = {x, y, $enemy}; /*Pushing the enemy to the enemies array as they are created*/
@@ -282,7 +282,7 @@ function createLaser(){
 
     /*The Space Bar triggers the createLaser function and this is where the magic happens*/
     const $laser = document.createElement("img");
-    $laser.src = "../images/laser.png";
+    $laser.src = "./images/laser.png";
     $laser.className = "laser";
     gameArea.appendChild($laser);
 
