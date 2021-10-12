@@ -52,10 +52,10 @@ var y = 5; //Stores the intial y axis position of the ship in pixels
 
     //--------Creation of audio objects.----'
 
-var shooting = new Audio("../audio/lasershoot.mp3");
-var self_explosion = new Audio("../audio/disintegrate.mp3");
-var alienlaser = new Audio("../audio/enemylaser.mp3");
-var alienexplosion = new Audio("../audio/enemyexplosion.mp3")
+var shooting = new Audio("./audio/lasershoot.mp3");
+var self_explosion = new Audio("./audio/disintegrate.mp3");
+var alienlaser = new Audio("./audio/enemylaser.mp3");
+var alienexplosion = new Audio("./audio/enemyexplosion.mp3")
 
 /*-------------------------------------------------*/
 
@@ -181,7 +181,7 @@ function countdown(){
 
                     /*Generate a enemy laser using img*/
                     const $enemylaser = document.createElement("img");
-                    $enemylaser.src = "images/enemyLaser.png";
+                    $enemylaser.src = "../images/enemyLaser.png";
                     $enemylaser.className = "enemyLaser";
                     alienlaser.play(); // Play sound when the enemy laser is created
 
@@ -225,7 +225,7 @@ function setPosition(enemy, x, y) {
 function createEnemy(gameArea, x, y){
     /*Create enemy as img*/
     const $enemy = document.createElement("img");
-    $enemy.src = "/images/alien1.png";
+    $enemy.src = "../images/alien1.png";
     $enemy.className = "enemy";
     gameArea.appendChild($enemy); //Add the enemy to the gameArea in HTML
     const enemy = {x, y, $enemy}; /*Pushing the enemy to the enemies array as they are created*/
@@ -282,7 +282,7 @@ function createLaser(){
 
     /*The Space Bar triggers the createLaser function and this is where the magic happens*/
     const $laser = document.createElement("img");
-    $laser.src = "images/laser.png";
+    $laser.src = "../images/laser.png";
     $laser.className = "laser";
     gameArea.appendChild($laser);
 
