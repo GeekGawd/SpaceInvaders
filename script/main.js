@@ -12,13 +12,13 @@ document.getElementById("theme_song").play();
 
 /*Choosing 3 ships using event listeners*/
 document.getElementById("ship1").addEventListener("click",function(){
-    chooseShip("images/ship1.png");}
+    chooseShip("../images/ship1.png");}
     );
 document.getElementById("ship2").addEventListener("click",function(){
-    chooseShip("images/ship2.png");}
+    chooseShip("../images/ship2.png");}
     );
 document.getElementById("ship3").addEventListener("click",function(){
-    chooseShip("images/ship3.png");}
+    chooseShip("../images/ship3.png");}
     );
 /*-------------------------------------*/
 
